@@ -20,8 +20,15 @@ export class AppComponent {
     { title: 'Inicio', url: 'home', icon: 'home' },
     { title: 'El proceso de adaptación', url: 'proceso-adaptacion', icon: 'heart' },
     { title: 'La familia en la educación', url: 'lafamiliaenlaeducacion', icon: 'heart' },
-    { title: 'Manifestaciones, comportamientos y características', url: 'manifestacionescomportamientos', icon: 'heart' },
-    { title: 'Formación de habitos', url: 'formacionhabitos', icon: 'heart' },
+    { title: 'Formación de hábitos', url: 'formacionhabitos', icon: 'heart' },
+    { title: 'Canciones y Rondas', url: 'cancionesyrondas', icon: 'heart' },
+    { title: 'Juegos Interactivos', url: 'juegosinteractivos', icon: 'heart' },
+    { title: 'Para Jugar', url: 'parajugar', icon: 'heart' },
+    { title: 'Mensajes Educativos', url: 'mensajesedicativos', icon: 'heart' },
+    //{ title: 'Sugerencia de canciones y rondas', url: 'cancionesyrondas', icon: 'heart' },
+    //{ title: 'Manifestaciones, comportamientos y características', url: 'manifestacionescomportamientos', icon: 'heart' },
+    //{ title: 'Actividades', url: 'actividades', icon: 'heart' },
+    { title: 'Derechos del Niño', url: 'derechos', icon: 'heart' },
   ];
 
   constructor() {

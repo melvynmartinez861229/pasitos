@@ -30,5 +30,31 @@ export const routes: Routes = [
   {
     path: 'formacionhabitos',
     loadComponent: () => import('./pages/formacionhabitos/formacionhabitos.page').then( m => m.FormacionhabitosPage)
+  },
+  {
+    path: 'actividades',
+    loadComponent: () => import('./pages/actividades/actividades.page').then( m => m.ActividadesPage)
+  },
+  {
+    path: 'cancionesyrondas',
+    loadComponent: () => import('./pages/cancionesyrondas/cancionesyrondas.page').then( m => m.CancionesyrondasPage)
+  },
+  {
+    path: 'juegosinteractivos',
+    loadComponent: () => import('./pages/juegosinteractivos/juegosinteractivos.page').then( m => m.JuegosinteractivosPage)
+  },
+  {
+    path: 'parajugar',
+    loadComponent: () => import('./pages/parajugar/parajugar.page').then( m => m.ParajugarPage)
+  },
+  {
+    path: 'mensajesedicativos',
+    loadComponent: () => import('./pages/mensajesedicativos/mensajesedicativos.page').then( m => m.MensajesedicativosPage)
+  },
+  {
+    path: 'derechos',
+    loadComponent: () => import('./pages/derechos/derechos.page').then( m => m.DerechosPage)
   }
+
+
 ];
