@@ -192,4 +192,80 @@ ion-content {
       transform: scale(1.2);
     }
   }
+  @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+  .kids-dark-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Bubblegum Sans', cursive;
+    background: #1a1a2e;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255,105,180,0.3);
+  }
+  
+  .kids-dark-table::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1" fill="%23ffffff66"/></svg>');
+    pointer-events: none;
+  }
+  
+  .kids-dark-table th {
+    background: linear-gradient(45deg, #ff6b6b, #6b46c1);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .kids-dark-table td {
+    padding: 15px;
+    color: #fff;
+    border-bottom: 2px dotted #ff6b6b;
+    position: relative;
+    font-size: 1.2em;
+  }
+  
+  .kids-dark-table tr:nth-child(even) {
+    background: rgba(107,70,193,0.1);
+  }
+  
+  .kids-dark-table tr:hover {
+    background: rgba(255,107,107,0.15);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
+  .kids-dark-table td:first-child {
+    font-size: 1.4em;
+    text-align: center;
+    width: 60px;
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700;
+  }
+  
+  .kids-dark-table td:nth-child(2)::before {
+    content: '✨';
+    margin-right: 10px;
+  }
+  
+  .kids-dark-table tbody tr {
+    animation: floatUp 0.5s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes floatUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
