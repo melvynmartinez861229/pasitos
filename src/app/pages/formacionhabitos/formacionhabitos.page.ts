@@ -8,7 +8,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,IonImg,IonButtons,IonMenuBu
   templateUrl: './formacionhabitos.page.html',
   styles: '',
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonImg,IonButtons,IonMenuButton]
+  imports: [IonHeader, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonImg,IonButtons,IonMenuButton]
 })
 export class FormacionhabitosPage {
 

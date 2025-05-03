@@ -1,0 +1,195 @@
+ion-content {
+
+  /* Variables de colores */
+  :root {
+    --childish-yellow: #FFE05D;
+    --childish-blue: #6ECEF5;
+    --childish-pink: #FF9AA2;
+    --childish-green: #B5EAD7;
+  }
+
+  .schedule-item .item-text {
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  /* Estilos generales */
+  .childish-background {
+    --background: linear-gradient(180deg, var(--childish-green) 0%, var(--childish-blue) 100%);
+  }
+
+  .header-title {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    .title-icon {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+
+  .menu-button {
+    transform: scale(1.3);
+    --color: white;
+  }
+
+  .main-image {
+    border-radius: 20px;
+    border: 4px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    animation: bounce 2s ease infinite;
+  }
+
+  .section-title {
+    font-family: 'Bubblegum Sans', cursive;
+    color: var(--childish-pink);
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-bubble {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px 0;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 30px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .fun-text {
+    font-family: 'Comic Neue', cursive;
+    color: #2c3e50;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  .subtitle {
+    font-family: 'Bubblegum Sans', cursive;
+    color: var(--childish-yellow);
+    background-color: var(--childish-pink);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .schedule-list {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .schedule-item {
+    --background: transparent;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    margin: 10px 0;
+
+    .item-icon {
+      font-size: 24px;
+      margin-right: 15px;
+    }
+
+    .item-text {
+      font-family: 'Comic Neue', cursive;
+      color: #2c3e50;
+      font-size: 1rem;
+      white-space: normal;
+    }
+  }
+
+  .decorations {
+    position: relative;
+    height: 100px;
+
+    .cloud {
+      position: absolute;
+      width: 80px;
+      height: 30px;
+      background: white;
+      border-radius: 20px;
+      animation: float 10s infinite linear;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+      }
+
+      &::before {
+        top: -10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+      }
+
+      &::after {
+        top: -5px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .star {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      animation: twinkle 2s infinite;
+    }
+  }
+
+  /* Animaciones */
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+
+  @keyframes twinkle {
+
+    0%,
+    100% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+}

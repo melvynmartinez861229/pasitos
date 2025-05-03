@@ -1,3 +1,49 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" class="menu-button">
+        <ion-icon name="menu"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title class="header-title">
+      <ion-icon name="happy" class="title-icon"></ion-icon>
+      Proceso de Adaptación
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding childish-background">
+  <div class="content-wrapper">
+    <ion-img src="../../../assets/N1.png" alt="Niños" class="main-image"></ion-img>
+
+    <h2 class="section-title">El proceso de adaptación</h2>
+
+    <div class="text-bubble">
+      <p class="fun-text">
+        Se denomina proceso de adaptación: al tiempo que media desde el ingreso del niño a su cuidado hasta la plena
+        incorporación a la vida y actividades que se desarrollan.
+      </p>
+    </div>
+
+    <!-- Resto del contenido... -->
+    
+    <h3 class="subtitle">Horarios y actividades a realizar</h3>
+    
+    <ion-list class="schedule-list">
+      <ion-item *ngFor="let item of scheduleItems" class="schedule-item">
+        <ion-icon [name]="item.icon" slot="start" color="secondary" class="item-icon"></ion-icon>
+        <ion-label class="item-text">{{ item.time }} - {{ item.activity }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <div class="decorations">
+      <div class="cloud"></div>
+      <div class="star">⭐</div>
+    </div>
+  </div>
+</ion-content>
+<!--
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>El proceso de adaptación</ion-title>
@@ -168,3 +214,4 @@
   </ion-content>
 
 </ion-content>
+-->
