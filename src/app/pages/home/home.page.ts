@@ -6,7 +6,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,IonImg,IonButtons,IonMenuBu
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
-  styles: '',
+  styleUrls: ['./home.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonImg, IonButtons, IonMenuButton]
 })
