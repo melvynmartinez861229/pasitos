@@ -25,22 +25,22 @@
   background-color: #5bd35b;
 }
 .option-button.selected {
-  background-color: #4CAF50;
-  color: rgb(29, 118, 20);
-  border-color: #4CAF50;
+  background-color: #eadc44;
+  color: rgb(238, 39, 39);
+  border-color: #484c10;
 }
 .action-button {
   padding: 12px 24px;
   margin-top: 20px;
-  background-color: #2196F3;
-  color: rgb(81, 180, 89);
+  background-color: #0033d8;
+  color: rgb(181, 192, 237);
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
 }
 .action-button:disabled {
-  background-color: #79ee94;
+  background-color: #2c2e32;
   cursor: not-allowed;
 }
 .result-container {

@@ -144,8 +144,12 @@
       
     </div>
 
+    <div class="text-bubble"  style="background-color: rgb(127, 175, 119);">
+
     <div *ngIf="!quizCompleted" class="question-container">
-      <h2 class="question-text">{{ questions[currentQuestionIndex].text }}</h2>
+      <h1 class="question-text">{{ questions[currentQuestionIndex].text }}</h1>
+      <p class="fun-text">Puntos: {{score}}</p>
+      <p class="fun-text">Pregunta # {{currentQuestionIndex + 1}} de {{questions.length}}</p>
       <div *ngFor="let option of questions[currentQuestionIndex].options; let i = index">
         <button 
           class="option-button"
@@ -160,6 +164,7 @@
         [disabled]="selectedAnswer === null">
         {{ currentQuestionIndex < questions.length - 1 ? 'Siguiente' : 'Finalizar' }}
       </button>
+      
     </div>
   
     <div *ngIf="quizCompleted" class="result-container">
@@ -168,6 +173,7 @@
       <button class="action-button" (click)="restartQuiz()">Repetir Trivia</button>
     </div>
 
+  </div>
   </ion-content>
 
 
