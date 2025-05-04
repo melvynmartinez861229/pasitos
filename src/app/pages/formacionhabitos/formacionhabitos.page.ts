@@ -18,7 +18,7 @@ import {
 @Component({
   selector: 'app-formacionhabitos',
   templateUrl: './formacionhabitos.page.html',
-  styleUrls: ['../../app.component.scss'],
+  styleUrls: ['./formacionhabitos.page.scss','../../app.component.scss'],
   standalone: true,
   imports: [IonHeader, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonImg,IonButtons,IonMenuButton]
 })
