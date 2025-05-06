@@ -8,13 +8,20 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,IonButtons,IonMenuButton,Io
   templateUrl: './parajugar.page.html',
   styleUrls: ['./parajugar.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonMenuButton]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonMenuButton,IonImg]
 })
 export class ParajugarPage implements OnInit {
 
+
+
   constructor() { }
+
+
+
+  imagenes = Array.from({ length: 53 }, (_, i) => i + 1);
 
   ngOnInit() {
   }
+
 
 }
