@@ -1,0 +1,84 @@
+.infantil-container {
+    background: var(--ion-color-light);
+    color: var(--ion-color-dark);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.3);
+  }
+  
+  .infantil-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ion-color-primary);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2.5rem;
+  }
+  
+  .infantil-title::before {
+    content: "📚🎨👶"; /* emoticones infantiles */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.6rem;
+  }
+  
+  .infantil-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--ion-color-secondary);
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .infantil-subtitle::before {
+    content: "✨"; /* estrella para subtítulos */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .infantil-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .infantil-list li {
+    background: var(--ion-color-tertiary-tint);
+    margin-bottom: 0.6rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: var(--ion-color-dark);
+    position: relative;
+    padding-left: 2.5rem;
+  }
+  
+  .infantil-list li::before {
+    content: "🧸"; /* oso de peluche como viñeta */
+    position: absolute;
+    left: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+  }
+  
+  .infantil-highlight {
+    color: var(--ion-color-success);
+    font-weight: 700;
+  }
+  
+  .infantil-warning {
+    color: var(--ion-color-warning);
+    font-weight: 700;
+  }
+  
+  .infantil-danger {
+    color: var(--ion-color-danger);
+    font-weight: 700;
+  }
